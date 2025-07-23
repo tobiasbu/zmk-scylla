@@ -1,0 +1,11 @@
+file_format: "1"
+id: scylla
+name: scylla
+type: shield
+url: https://github.com/amadeusolofsson/zmk-scylla
+requires: [nice_nano_v2]
+features:
+  - keys
+siblings:
+  - scylla_left
+  - scylla_right
