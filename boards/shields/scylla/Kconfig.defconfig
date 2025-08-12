@@ -1,38 +1,31 @@
-if SHIELD_MY_KEYBOARD_LEFT
-
-config ZMK_KEYBOARD_NAME
-    default "scylla"
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
+if SHIELD_SCYLLA_LEFT
+    config ZMK_KEYBOARD_NAME
+        default "scylla"
+    config ZMK_SPLIT_BLE_ROLE_CENTRAL
+        default y
 endif
 
-if SHIELD_MY_KEYBOARD_LEFT || SHIELD_MY_KEYBOARD_RIGHT
-
-config ZMK_SPLIT
-    default y
-
+if SHIELD_SCYLLA_RIGHT
+    config ZMK_KEYBOARD_NAME
+        default "scylla"
 endif
 
-if SHIELD_MY_KEYBOARD_DONGLE
+if SHIELD_SCYLLA_LEFT || SHIELD_SCYLLA_RIGHT
+    config ZMK_SPLIT
+        default y
+endif
 
-config ZMK_KEYBOARD_NAME
-    default "scylla"
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-config ZMK_SPLIT
-    default y
-
-config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
-    default 2
-
-config BT_MAX_CONN
-    default 3
-
-config BT_MAX_PAIRED
-    default 3
-
+if SHIELD_SCYLLA_DONGLE
+    config ZMK_KEYBOARD_NAME
+        default "scylla"
+    config ZMK_SPLIT_ROLE_CENTRAL
+        default y
+    config ZMK_SPLIT
+        default y
+    config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+        default 2
+    config BT_MAX_CONN
+        default 3
+    config BT_MAX_PAIRED
+        default 3
 endif
