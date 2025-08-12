@@ -1,12 +1,12 @@
 #include "scylla.dtsi"
 
 &kscan0 {
-	col-gpios
-		= <&pro_micro 19 GPIO_ACTIVE_HIGH>
-		, <&pro_micro 18 GPIO_ACTIVE_HIGH>
-		, <&pro_micro 15 GPIO_ACTIVE_HIGH>
-		, <&pro_micro 14 GPIO_ACTIVE_HIGH>
-		, <&pro_micro 16 GPIO_ACTIVE_HIGH>
-		, <&pro_micro 10 GPIO_ACTIVE_HIGH>
-		;
+    col-gpios
+        = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // col5 in the schematic
+        , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // col4 in the schematic
+        , <&gpio0 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // col3 in the schematic
+        , <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // col2 in the schematic
+        , <&gpio0 11  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col1 in the schematic
+        , <&gpio1 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // col0 in the schematic
+        ;
 };
