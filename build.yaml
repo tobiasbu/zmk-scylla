@@ -1,12 +1,12 @@
 include:
   - board: nice_nano_v2
     shield: scylla_left
- #   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n # Comment for using bluetooth and not the dongle.
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n # Comment for using bluetooth and not the dongle.
  #   snippet: zmk-usb-logging
     
   - board: nice_nano_v2
     shield: scylla_right
- #   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n # Comment for using bluetooth and not the dongle.
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n # Comment for using bluetooth and not the dongle.
  #  snippet: zmk-usb-logging
 
   - board: nice_nano_v2
