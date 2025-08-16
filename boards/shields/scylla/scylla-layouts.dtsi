@@ -5,8 +5,6 @@
         compatible = "zmk,physical-layout";
         display-name = "scylla";
 
-        // Remove the kscan reference - let it be handled by the specific overlays
-        // kscan = <&kscan0>;
         transform = <&scylla_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
