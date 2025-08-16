@@ -4,8 +4,6 @@
     scylla_layout: scylla_layout {
         compatible = "zmk,physical-layout";
         display-name = "scylla";
-
-        kscan = <&kscan0>;
         transform = <&scylla_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
