@@ -1,4 +1,4 @@
-# ZMK Firmware for Scylla (Nice!Nano v2)
+# ZMK Firmware for Scylla
 
 This is my personal ZMK firmware for the Scylla keyboard, built with Nice!Nano v2 microcontrollers, and a Seeed Xiao dongle.
 
