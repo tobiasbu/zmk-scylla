@@ -1,2 +1,18 @@
-This is my personal zmk firmware for the scylla that I built with nice:nano v2s. It has support for a dongle and zmk studio which you can easily toggle by commenting/uncommenting in build.yaml (I haven't tested bluetooth and zmk studio but it probably works).
-If you want to use this for yourself just fork it and change they keymap for your needs and it should probably work.
+# ZMK Firmware for Scylla (Nice!Nano v2)
+
+This is my personal ZMK firmware for the Scylla keyboard, built with Nice!Nano v2 microcontrollers, and a Seeed Xiao dongle.
+
+## Features
+
+This firmware includes support for a dongle and ZMK Studio.
+You can toggle between them by commenting or uncommenting in `build.yaml`.
+I haven't tested Bluetooth and ZMK Studio at the same time but I assume it works.
+
+## Usage
+
+To use this firmware for your own Scylla:
+Just fork the repository, update the keymap to your needs, go the Actions and download the firmware.
+It should work with minimal changes.
+
+## Flashing
+Flash the correct reset for each microcontroller. Then turn off the keyboards. Flash dongle firmware, then each half firmware. Then you should be able to turn on the keyboards and it should work.
