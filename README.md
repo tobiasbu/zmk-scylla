@@ -16,3 +16,6 @@ It should work with minimal changes.
 
 ## Flashing
 Flash the correct reset for each microcontroller. Then turn off the keyboards. Flash dongle firmware, then each half firmware. Then you should be able to turn on the keyboards and it should work.
+
+## Battery Level
+In windows it will only show the battery of the dongle. But if you use a program like this you can get both halves to show their battery: https://github.com/kot149/zmk-battery-center
