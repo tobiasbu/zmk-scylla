@@ -1,6 +1,6 @@
 if SHIELD_SCYLLA_LEFT
     config ZMK_KEYBOARD_NAME
-        default "scylla"
+        default "Scylla"
     config ZMK_SPLIT_ROLE_CENTRAL
         default y
 endif
@@ -8,11 +8,17 @@ endif
 if SHIELD_SCYLLA_LEFT || SHIELD_SCYLLA_RIGHT
     config ZMK_SPLIT
         default y
+    config BT
+        default y
+    config BT_MAX_CONN
+        default 1
+    config BT_MAX_PAIRED
+        default 3
 endif
 
 if SHIELD_SCYLLA_DONGLE
     config ZMK_KEYBOARD_NAME
-        default "scylla"
+        default "Scylla"
     config ZMK_SPLIT_ROLE_CENTRAL
         default y
     config ZMK_SPLIT
