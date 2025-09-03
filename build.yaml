@@ -1,26 +1,26 @@
 include:
   - board: nice_nano_v2
     shield: scylla_left
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n # Comment for using bluetooth and not the dongle.
+    #artifact-name: left_firmware
+    #cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n # Comment for using bluetooth and not the dongle.
     # snippet: studio-rpc-usb-uart # Uncomment to use.
     # cmake-args: -DCONFIG_ZMK_STUDIO=y # Zmk studio with bluetooth.
-    artifact-name: left_firmware
         
   - board: nice_nano_v2
     shield: scylla_right
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n # Comment for using bluetooth and not the dongle.
-    artifact-name: right_firmware
+    #artifact-name: right_firmware
+    #cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n # Comment for using bluetooth and not the dongle.
 
-  - board: seeeduino_xiao_ble
-    shield: scylla_dongle
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: dongle_firmware
+  # - board: seeeduino_xiao_ble
+  #   shield: scylla_dongle
+  #   snippet: studio-rpc-usb-uart
+  #   cmake-args: -DCONFIG_ZMK_STUDIO=y
+  #   artifact-name: dongle_firmware
 
-  - board: nice_nano_v2
-    shield: settings_reset
-    artifact-name: keyboard_reset
+  # - board: nice_nano_v2
+  #   shield: settings_reset
+  #   artifact-name: keyboard_reset
 
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
-    artifact-name: dongle_reset
+  # - board: seeeduino_xiao_ble
+  #   shield: settings_reset
+  #   artifact-name: dongle_reset
