@@ -14,18 +14,18 @@
         default_layer {
 // Base layer
 // --------------------------------------------------------------------------------------------------------------------
-// |  ESC  |   1   |   2   |   3   |   4   |   5   |            |   6   |  7    |  8    |  9   |   0   |   -      |
-// |  TAB  |   Q   |   W   |   E   |   R   |   T   |            |   Y   |  U    |  I    |  O   |   P   |   |      |
-// | SHIFT |   A   |   S   |   D   |   F   |   G   |            |   H   |  J    |  K    |  L   |   ;   |   '      |
-// | CTRL  |   Z   |   X   |   C   |   V   |   B   |            |   N   |  M    |  ,    |  .   |   ?   | BT CLEAR |
+// |  ESC  |   1   |   2   |   3   |   4   |   5   |            |   6   |   7   |   8   |   9   |   0   |   -      |
+// |  TAB  |   Q   |   W   |   E   |   R   |   T   |            |   Y   |   U   |   I   |   O   |   P   |   |      |
+// | SHIFT |   A   |   S   |   D   |   F   |   G   |            |   H   |   J   |   K   |   L   |   ;   |   '      |
+// | CTRL  |   Z   |   X   |   C   |   V   |   B   |            |   N   |   M   |   ,   |   .   |   ?   | BT CLEAR |
 //                         |  GUI  | SPACE | LOWER |            | RAISE | ENTER | RAISE |  
 //                                 | ALT   |  BSPC |            |  DEL  |  CTRL |
             bindings = <
-&kp ESC     &kp N1  &kp N2  &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9     &kp N0      &kp MINUS
-&kp TAB     &kp Q   &kp W   &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O      &kp P       &kp EQUAL
-&kp LSHFT   &kp A   &kp S   &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L      &kp ;       &kp PIPE
-&kp LCTRL   &kp Z   &kp X   &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT    &kp QMARK   &bt BT_CLR_ALL
-                            &kp LGUI    &kp SPACE   &mo LY_LWR  &kp LY_RSE  &kp ENTER   &kp RGUI 
+&kp ESC     &kp N1  &kp N2  &kp N3      &kp N4      &kp N5      &kp N6      &kp N7       &kp N8       &kp N9     &kp N0       &kp MINUS
+&kp TAB     &kp Q   &kp W   &kp E       &kp R       &kp T       &kp Y       &kp U        &kp I        &kp O      &kp P        &kp PIPE
+&kp LSHFT   &kp A   &kp S   &kp D       &kp F       &kp G       &kp H       &kp J        &kp K        &kp L      &kp ;        &kp PIPE
+&kp LCTRL   &kp Z   &kp X   &kp C       &kp V       &kp B       &kp N       &kp M        &kp COMMA    &kp DOT    &kp QMARK    &bt BT_CLR_ALL
+                            &kp LGUI    &kp SPACE   &mo LY_LWR  &mo LY_RSE  &kp ENTER    &kp RGUI 
                                         &kp LALT    &kp BSPC    &kp DEL     &kp RCTRL
             >;
         };
